@@ -93,6 +93,36 @@
           </ul>
         </fieldset>
 
+        <fieldset class="achievement-checkbox ">
+          <legend>Ваши безбашенные достижения в путешествии</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="intensive-courses" id="courses" checked>
+              <label for="courses">Сделал селфи с акулой</label>
+            </li>
+            <li>
+              <input type="checkbox" name="books" id="books" checked>
+              <label for="books">Обгорел на пляже</label>
+            </li>
+            <li>
+              <input type="checkbox" name="video" id="video">
+              <label for="video">Видел Чака Норриса</label>
+            </li>
+             <li>
+              <input type="checkbox" name="intensive-courses" id="courses">
+              <label for="courses">Накупил сувениров</label>
+            </li>
+            <li>
+              <input type="checkbox" name="books" id="books" checked>
+              <label for="books">Удержал башню</label>
+            </li>
+            <li>
+              <input type="checkbox" name="video" id="video">
+              <label for="video">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+
         <fieldset>
           <legend>Контакты</legend>
           <ul>
@@ -107,27 +137,6 @@
           </ul>
         </fieldset>
 
-        <div>
-          <label for="message">Увлечения</label>
-          <textarea name="comment" placeholder="Расскажите обо всём, что для вас важно" id="message"></textarea>
-        </div>
-        <fieldset>
-          <legend>Учёба</legend>
-          <ul>
-            <li>
-              <input type="checkbox" name="intensive-courses" id="courses" checked>
-              <label for="courses">Прохожу курсы</label>
-            </li>
-            <li>
-              <input type="checkbox" name="books" id="books">
-              <label for="books">Читаю книги</label>
-            </li>
-            <li>
-              <input type="checkbox" name="video" id="video">
-              <label for="video">Смотрю видео</label>
-            </li>
-          </ul>
-        </fieldset>
         <fieldset>
           <legend>Предпочтения</legend>
           <ul>
@@ -141,8 +150,14 @@
             </li>
           </ul>
         </fieldset>
+
         <div>
-          <button type="submit">Отправить</button>
+          <label for="message">опишите свои эмоции</label>
+          <textarea name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" id="message"></textarea>
+        </div>
+
+        <div>
+          <button type="submit">Отправить форму</button>
           <p>* — Обязательные поля</p>
         </div>
       </form>

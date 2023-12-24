@@ -62,6 +62,7 @@
   <main class="page-inner">
 
     <div class="page-inner__wrapper">
+
       <div class="contest description">
         <p class="description__name">
           Конкурс на самое
@@ -74,95 +75,98 @@
         </p>
         <a class="description__link">Узнать больше об исследовании</a>
       </div>
-      <form class="personal-filters" action="#" method="post" target="_blank">
-        <fieldset class="pesonal-data data">
-          <legend class="visually-hidden">Персональные данные</legend>
-          <ul class="data__list">
-            <li class="data__item">
-              <label class="data__surname" for="surname">фамилия:</label>
-              <input class="data__text" type="text" name="surname" placeholder="Укажите фамилию *" id="surname" required>
-            </li>
-            <li class="data__item">
-              <label class="data__surname" for="name">имя:</label>
-              <input class="data__text" type="text" name="name" placeholder="Введите ваше имя *" id="name" min="0" max="125">
-            </li>
-            <li class="data__item">
-              <label class="data__surname" for="patronymic">отчество:</label>
-              <input class="data__text" type="text" name="patronymic" placeholder="Ну и отчество тоже" id="patronymic" min="0" max="125">
-            </li>
-          </ul>
-        </fieldset>
 
-        <fieldset class="achievement-checkbox ">
-          <legend>Ваши безбашенные достижения в путешествии</legend>
-          <ul>
-            <li>
-              <input type="checkbox" name="intensive-courses" id="courses" checked>
-              <label for="courses">Сделал селфи с акулой</label>
-            </li>
-            <li>
-              <input type="checkbox" name="books" id="books" checked>
-              <label for="books">Обгорел на пляже</label>
-            </li>
-            <li>
-              <input type="checkbox" name="video" id="video">
-              <label for="video">Видел Чака Норриса</label>
-            </li>
-             <li>
-              <input type="checkbox" name="intensive-courses" id="courses">
-              <label for="courses">Накупил сувениров</label>
-            </li>
-            <li>
-              <input type="checkbox" name="books" id="books" checked>
-              <label for="books">Удержал башню</label>
-            </li>
-            <li>
-              <input type="checkbox" name="video" id="video">
-              <label for="video">Разгромил отель</label>
-            </li>
-          </ul>
-        </fieldset>
+        <form class="filters" action="#" method="post" target="_blank">
+          <fieldset class="pesonal-data data">
+            <legend class="visually-hidden">Персональные данные</legend>
+            <ul class="data__list">
+              <li class="data__item">
+                <label class="data__sulabel" for="surname">фамилия:</label>
+                <input class="data__input" type="text" name="surname" placeholder="Укажите фамилию *" id="surname" required>
+              </li>
+              <li class="data__item">
+                <label class="data__sulabel" for="name">имя:</label>
+                <input class="data__input" type="text" name="name" placeholder="Введите ваше имя *" id="name" min="0" max="125">
+              </li>
+              <li class="data__item">
+                <label class="data__sulabel" for="patronymic">отчество:</label>
+                <input class="data__input" type="text" name="patronymic" placeholder="Ну и отчество тоже" id="patronymic" min="0" max="125">
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset>
-          <legend>Контакты</legend>
-          <ul>
-            <li>
-              <label for="email">E-mail:*</label>
-              <input type="email" name="mail" placeholder="ivanov@gmail.com" id="email" required>
-            </li>
-            <li>
-              <label for="number">Телефон:*</label>
-              <input type="tel" name="phone" placeholder="+7 000 000-00-00" id="number" maxlength="21" required>
-            </li>
-          </ul>
-        </fieldset>
+          <fieldset class="achievement-checkbox achievement">
+            <legend class="achievement__title">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="achievement__list">
+              <li class="achievement__item">
+                <input class="visually-hidden achievement__checkbox" type="checkbox" name="intensive-courses" id="courses" checked>
+                <label class="achievement__label" for="courses">Сделал селфи с акулой</label>
+              </li>
+              <li class="achievement__item">
+                <input class="visually-hidden achievement__checkbox" type="checkbox" name="books" id="books" checked>
+                <label class="achievement__label" for="books">Обгорел на пляже</label>
+              </li>
+              <li class="achievement__item">
+                <input class="visually-hidden achievement__checkbox" type="checkbox" name="video" id="video">
+                <label class="achievement__label" for="video">Видел Чака Норриса</label>
+              </li>
+               <li class="achievement__item">
+                <input class="visually-hidden achievement__checkbox" type="checkbox" name="intensive-courses" id="courses">
+                <label class="achievement__label" for="courses">Накупил сувениров</label>
+              </li>
+              <li class="achievement__item">
+                <input class="visually-hidden achievement__checkbox" type="checkbox" name="books" id="books" checked>
+                <label class="achievement__label" for="books">Удержал башню</label>
+              </li>
+              <li class="achievement__item">
+                <input class="visually-hidden achievement__checkbox" type="checkbox" name="video" id="video">
+                <label class="achievement__label" for="video">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset>
-          <legend>Предпочтения</legend>
-          <ul>
-            <li>
-              <input type="radio" name="preference" id="front" value="frontend" checked>
-              <label for="front">Фронтенд-разработка</label>
-            </li>
-            <li>
-              <input type="radio" name="preference" id="back" value="backend">
-              <label for="back">Бэкенд-разработка</label>
-            </li>
-          </ul>
-        </fieldset>
+          <fieldset class="contacts-data data">
+            <legend class="visually-hidden">Контакты</legend>
+            <ul class="data__list">
+              <li class="data__item">
+                <label class="data__label" for="email">E-mail:*</label>
+                <input class="data__input" type="email" name="mail" placeholder="ivanov@gmail.com" id="email" required>
+              </li>
+              <li class="data__item">
+                <label class="data__label" for="number">Телефон:*</label>
+                <input class="data__input" type="tel" name="phone" placeholder="+7 000 000-00-00" id="number" maxlength="21" required>
+              </li>
+            </ul>
+          </fieldset>
 
-        <div>
-          <label for="message">опишите свои эмоции</label>
-          <textarea name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" id="message"></textarea>
-        </div>
+          <fieldset class="application-os system">
+            <legend class="visually-hidden">на какой операционной системе установлено приложение</legend>
+            <ul class="system__list">
+              <li class="system__item">
+                <input class="system__input" type="radio" name="systems" id="ios" value="ios" checked>
+                <label for="ios">Фронтенд-разработка</label>
+              </li>
+              <li class="system__item">
+                <input class="system__input" type="radio" name="systems" id="android" value="android">
+                <label for="android">Бэкенд-разработка</label>
+              </li>
+              <li class="system__item">
+                <input class="system__input" type="radio" name="systems" id="windowsphone" value="windowsphone">
+                <label for="windowsphone">Бэкенд-разработка</label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <div>
-          <button type="submit">Отправить форму</button>
-          <p>* — Обязательные поля</p>
-        </div>
-      </form>
+          <div class="emotions-describe describe">
+            <label class="describe__label" for="message">опишите свои эмоции</label>
+            <textarea class="describe__textarea" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" id="message"></textarea>
+          </div>
+        </form>
+        <div class="to-send send">
+            <button class="send__form" type="submit">Отправить форму</button>
+            <p class="send__required">* — Обязательные поля</p>
+          </div>
     </div>
-
   </main>
 
   <footer class="page-footer">

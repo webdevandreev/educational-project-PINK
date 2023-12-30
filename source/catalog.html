@@ -62,110 +62,39 @@
   <main class="page-inner">
 
     <div class="page-inner__wrapper">
-
-      <div class="contest description">
+      
+       <div class="content description">
         <p class="description__name">
-          Конкурс на самое
-          безбашенное путешествие с Пинк!
+          Фотографии пользователей
         </p>
         <p class="description__terms">
-          Поделитесь своей историей и получите
-          шанс выиграть ценный приз — 1000
-          миль на вашу бонусную карту!
+          Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?
         </p>
-        <a class="description__link">Узнать больше об исследовании</a>
       </div>
-
-        <form class="filters" action="#" method="post" target="_blank">
-          <fieldset class="pesonal-data data">
-            <legend class="visually-hidden">Персональные данные</legend>
-            <ul class="data__list">
-              <li class="data__item">
-                <label class="data__sulabel" for="surname">фамилия:</label>
-                <input class="data__input" type="text" name="surname" placeholder="Укажите фамилию *" id="surname" required>
-              </li>
-              <li class="data__item">
-                <label class="data__sulabel" for="name">имя:</label>
-                <input class="data__input" type="text" name="name" placeholder="Введите ваше имя *" id="name" min="0" max="125">
-              </li>
-              <li class="data__item">
-                <label class="data__sulabel" for="patronymic">отчество:</label>
-                <input class="data__input" type="text" name="patronymic" placeholder="Ну и отчество тоже" id="patronymic" min="0" max="125">
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="achievement-checkbox achievement">
-            <legend class="achievement__title">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="achievement__list">
-              <li class="achievement__item">
-                <input class="visually-hidden achievement__checkbox" type="checkbox" name="intensive-courses" id="courses" checked>
-                <label class="achievement__label" for="courses">Сделал селфи с акулой</label>
-              </li>
-              <li class="achievement__item">
-                <input class="visually-hidden achievement__checkbox" type="checkbox" name="books" id="books" checked>
-                <label class="achievement__label" for="books">Обгорел на пляже</label>
-              </li>
-              <li class="achievement__item">
-                <input class="visually-hidden achievement__checkbox" type="checkbox" name="video" id="video">
-                <label class="achievement__label" for="video">Видел Чака Норриса</label>
-              </li>
-               <li class="achievement__item">
-                <input class="visually-hidden achievement__checkbox" type="checkbox" name="intensive-courses" id="courses">
-                <label class="achievement__label" for="courses">Накупил сувениров</label>
-              </li>
-              <li class="achievement__item">
-                <input class="visually-hidden achievement__checkbox" type="checkbox" name="books" id="books" checked>
-                <label class="achievement__label" for="books">Удержал башню</label>
-              </li>
-              <li class="achievement__item">
-                <input class="visually-hidden achievement__checkbox" type="checkbox" name="video" id="video">
-                <label class="achievement__label" for="video">Разгромил отель</label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="contacts-data data">
-            <legend class="visually-hidden">Контакты</legend>
-            <ul class="data__list">
-              <li class="data__item">
-                <label class="data__label" for="email">E-mail:*</label>
-                <input class="data__input" type="email" name="mail" placeholder="ivanov@gmail.com" id="email" required>
-              </li>
-              <li class="data__item">
-                <label class="data__label" for="number">Телефон:*</label>
-                <input class="data__input" type="tel" name="phone" placeholder="+7 000 000-00-00" id="number" maxlength="21" required>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="application-os system">
-            <legend class="visually-hidden">на какой операционной системе установлено приложение</legend>
-            <ul class="system__list">
-              <li class="system__item">
-                <input class="system__input" type="radio" name="systems" id="ios" value="ios" checked>
-                <label for="ios">Фронтенд-разработка</label>
-              </li>
-              <li class="system__item">
-                <input class="system__input" type="radio" name="systems" id="android" value="android">
-                <label for="android">Бэкенд-разработка</label>
-              </li>
-              <li class="system__item">
-                <input class="system__input" type="radio" name="systems" id="windowsphone" value="windowsphone">
-                <label for="windowsphone">Бэкенд-разработка</label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <div class="emotions-describe describe">
-            <label class="describe__label" for="message">опишите свои эмоции</label>
-            <textarea class="describe__textarea" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" id="message"></textarea>
-          </div>
-        </form>
-        <div class="to-send send">
-            <button class="send__form" type="submit">Отправить форму</button>
-            <p class="send__required">* — Обязательные поля</p>
-          </div>
+      
+      <div class="catalog-foto foto">
+       <ul class="foto__list">
+        <li class="foto__item">
+          
+        </li>
+        <li class="foto__item">
+          
+        </li>
+        <li class="foto__item">
+          
+        </li>
+        <li class="foto__item">
+          
+        </li>
+        <li class="foto__item">
+          
+        </li>
+        <li class="foto__item">
+          
+        </li> 
+        </ul> 
+      </div>
     </div>
   </main>
 
@@ -190,15 +119,7 @@
       </div>
     </div>
   </footer>
-
-<div class="modal-failure failure">
-    <p class="failure__title">Что-то пошло не так!</p>
-    <ul class="failure__list">
-      <li class="failure__item"><a href="#" class="button-order">оформить заказ</a></li>
-      <li class="failure__item"><a href="#" class="button-purchases">продолжить покупки</a></li>
-    </ul>
-    <button class="failure__close" type="button" aria-label="Закрыть"></button>
-  </div>
+  
 </body>
 
 </html>
